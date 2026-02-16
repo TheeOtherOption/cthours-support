@@ -7,46 +7,167 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            max-width: 700px;
+            max-width: 820px;
             margin: 40px auto;
             padding: 0 20px;
             line-height: 1.6;
+            color: #111827;
+        }
+        header {
+            margin-bottom: 24px;
         }
         h1 {
-            color: #0A84FF;
+            margin: 0 0 6px 0;
+            font-size: 28px;
+        }
+        .sub {
+            margin: 0;
+            color: #6b7280;
         }
         a {
             color: #0A84FF;
             text-decoration: none;
         }
+        a:hover {
+            text-decoration: underline;
+        }
+        .card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 18px 18px;
+            margin: 16px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+        h2 {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+        }
+        h3 {
+            font-size: 16px;
+            margin: 14px 0 6px 0;
+        }
+        code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+            font-size: 0.95em;
+        }
+        ul {
+            margin: 10px 0 0 20px;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e5e7eb;
+            margin: 18px 0;
+        }
+        .muted {
+            color: #6b7280;
+            font-size: 14px;
+        }
     </style>
 </head>
+
 <body>
+<header>
     <h1>CTHours Support</h1>
+    <p class="sub">Help, troubleshooting, and contact</p>
+</header>
 
-    <p>
-        Thank you for using CTHours.
-    </p>
-
-    <p>
-        If you need assistance, have questions, or would like to report a bug,
-        please contact us at:
-    </p>
-
+<div class="card">
+    <h2>Contact</h2>
+    <p>If you need assistance, have questions, or would like to report a bug, email us:</p>
     <p>
         <strong>Email:</strong>
         <a href="mailto:cthoursapp@gmail.com">cthoursapp@gmail.com</a>
     </p>
+    <p class="muted">Typical response time: 1–2 business days.</p>
+</div>
 
+<div class="card">
+    <h2>Before you email (helps us fix issues faster)</h2>
+    <p>Please include the following in your message when reporting a bug:</p>
+    <ul>
+        <li>What you expected to happen vs. what happened</li>
+        <li>Steps to reproduce (1, 2, 3…)</li>
+        <li>Device model (e.g., iPhone 16 Pro)</li>
+        <li>iOS version (Settings → General → About)</li>
+        <li>CTHours version + build number (see below)</li>
+    </ul>
+
+    <h3>How to find CTHours version + build</h3>
     <p>
-        We typically respond within 1–2 business days.
+        In the app, go to <strong>Settings</strong> and look for <strong>Version</strong> / <strong>Build</strong>.
+        If you’re using TestFlight, you can also open the TestFlight app → CTHours → scroll to see the build number.
+    </p>
+</div>
+
+<div class="card">
+    <h2>Subscription help (Pro)</h2>
+
+    <h3>Restore Purchases</h3>
+    <p>
+        If Pro isn’t showing as active, try:
+        <strong>Settings → Subscription → Restore Purchases</strong>.
     </p>
 
-    <hr>
-
+    <h3>Apple handles billing</h3>
     <p>
-        For privacy information, please see our
-        <a href="privacy.html">Privacy Policy</a>.
+        Subscriptions are managed by Apple via your App Store account. You can view or manage subscriptions here:
+        <br>
+        <code>Settings → Apple ID → Subscriptions</code>
     </p>
+
+    <h3>Refund requests</h3>
+    <p>
+        Refunds are processed by Apple. If you believe you were billed incorrectly, you can request a refund through Apple’s
+        “Report a Problem” flow (Apple ID purchase history).
+    </p>
+
+    <h3>If issues persist</h3>
+    <p>
+        Email <a href="mailto:cthoursapp@gmail.com">cthoursapp@gmail.com</a> with:
+    </p>
+    <ul>
+        <li>The Apple ID email used for purchases (do not send passwords)</li>
+        <li>Your CTHours version/build</li>
+        <li>What you see on the paywall or subscription screen</li>
+    </ul>
+
+    <p class="muted">
+        Note: We cannot access your Apple payment details. Apple does not share full billing data with developers.
+    </p>
+</div>
+
+<div class="card">
+    <h2>FAQ</h2>
+
+    <h3>How do I export my hours?</h3>
+    <p>Use the Reports section inside the app to export your logged entries.</p>
+
+    <h3>Is my data backed up?</h3>
+    <p>
+        Your data is stored on your device. If iCloud sync is enabled, your data may sync across your Apple devices
+        through your private iCloud account.
+    </p>
+
+    <h3>Why do location suggestions not appear?</h3>
+    <p>
+        If you use location-based features, ensure Location Services are enabled for CTHours:
+        <code>Settings → Privacy & Security → Location Services</code>.
+    </p>
+
+    <h3>What if the app crashes?</h3>
+    <p>
+        If you’re on TestFlight, crashes are often captured automatically. Email us with your version/build and what you were doing
+        right before the crash.
+    </p>
+</div>
+
+<p class="muted">
+    Privacy info: <a href="privacy.html">Privacy Policy</a> • Home: <a href="index.html">CTHours Support Home</a>
+</p>
+
 </body>
 </html>
